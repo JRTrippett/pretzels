@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Eatin Pretzels | Leftovers to Muscle</title>
+    <style>
+        :root {
+            --primary-color: #D37506; /* Pretzel Orange */
+            --secondary-color: #2C3E50; /* Charcoal/Navy */
+            --bg-color: #F8F9FA;
+            --text-color: #333333;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #B06004;
+        }
+
+        .section {
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 50px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .story-section {
+            background-color: var(--white);
+            padding: 80px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .story-content {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .story-content h2 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .personas {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 80px 5%;
+        }
+
+        .personas .section-title {
+            color: var(--white);
+        }
+
+        .persona-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .persona-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .footer {
+            background-color: #1a252f;
+            color: #ccc;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .story-section { flex-direction: column; text-align: center; }
+            .story-content { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Just Eatin Pretzels</div>
+        <nav>
+            <a href="#waitlist" class="btn" style="padding: 10px 20px; font-size: 1rem;">Join Waitlist</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Fuel Your Dad Strength. Zero Waste.</h1>
+        <p>The smartest meal-prep app designed for busy fathers. Turn last night's leftovers into today's muscle-building fuel. Stop overthinking your macros and start maximizing your time.</p>
+        <a href="#waitlist" class="btn">Get Early Access</a>
+    </section>
+
+    <section class="section" id="features">
+        <h2 class="section-title">How It Works</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🥩</div>
+                <h3>The Leftover Engine</h3>
+                <p>Input what’s left in the fridge. Our app instantly generates high-protein, dad-approved recipes using exactly what you already have.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💪</div>
+                <h3>Macro-Optimized for Muscle</h3>
+                <p>We do the math. Every leftover combination is optimized to hit your protein targets so you can pack on muscle without eating plain chicken breast every day.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Time-Saving Prep</h3>
+                <p>Between work, the kids, and life, you don't have 2 hours to cook. Our recipes take under 15 minutes because half the cooking is already done.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <div class="story-content">
+            <h2>Built by Dads, For Dads</h2>
+            <p><strong>Just Eatin Pretzels</strong> started with a conversation between two friends: Jonathan and Andrew. </p>
+            <br>
+            <p>Andrew is a full-time lawyer. Jonathan is a busy dad. Both of them share the exact same struggle: wanting to eat well, stay in shape, pack on muscle, and be great fathers—without wasting food or spending all evening in the kitchen.</p>
+            <br>
+            <p>They realized that leftovers are the secret weapon to dad-gains. By repurposing family dinners into high-protein lunches, they solved the meal-prep puzzle. Now, they're sharing that system with you.</p>
+        </div>
+    </section>
+
+    <section class="personas" id="personas">
+        <h2 class="section-title" style="text-align: center;">Who Is This For?</h2>
+        <div class="persona-grid">
+            <div class="persona-card">
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">The Courtroom Gladiator</h3>
+                <p><strong>The Profile:</strong> Like Andrew, you're a high-stress professional (lawyer, exec, doctor) working 50+ hours a week. You want to stay athletic but your time is your most scarce resource.</p>
+                <p style="margin-top: 10px;"><strong>The Fix:</strong> No more sad desk salads. Turn Sunday's roast into a 40g protein wrap for Tuesday's lunch between client meetings.</p>
+            </div>
+            <div class="persona-card">
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">The Active Family Man</h3>
+                <p><strong>The Profile:</strong> Like Jonathan, you're a hands-on dad. You want to set a healthy example for the kids, stay strong, and stop throwing away perfectly good groceries at the end of the week.</p>
+                <p style="margin-top: 10px;"><strong>The Fix:</strong> Kid-friendly dinners seamlessly transformed into heavy-lifting fuel for your morning workouts. Eat well, waste nothing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="waitlist" style="background-color: var(--bg-color);">
+        <h2 class="section-title">Launching Soon. Don't Miss Out.</h2>
+        <p style="max-width: 600px; margin: 0 auto 30px; font-size: 1.1rem;">Join the beta and be the first to transform your leftovers into gains.</p>
+        <form style="display: flex; justify-content: center; gap: 10px; max-width: 500px; margin: 0 auto; flex-wrap: wrap;">
+            <input type="email" placeholder="Enter your email address" style="padding: 15px; width: 100%; max-width: 300px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem;">
+            <button type="submit" class="btn" style="border: none; cursor: pointer;">Notify Me</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Just Eatin Pretzels. All rights reserved.</p>
+        <p style="font-size: 0.9rem; margin-top: 10px; color: #888;">Eat the leftovers. Lift the weights. Be a great dad.</p>
+    </footer>
+
+</body>
+</html>
